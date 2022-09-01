@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <the-navbar></the-navbar>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import img from  '@/assets/assets/images/logo.png'
+import imgprofile from '@/assets/assets/images/profile-header.jpg'
+import TheNavbar from "@/components/TheNavbar";
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    TheNavbar
+  },
+  
+  setup(){
+    
+    return {
+      img, imgprofile,
+    }
   }
 }
 </script>
