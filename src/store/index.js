@@ -1,6 +1,10 @@
 import { createStore } from 'vuex'
+import request from "@/store/modules/request.module";
+
+const plugins = []
 
 export default createStore({
+  plugins,
   state: {
   },
   getters: {
@@ -10,5 +14,6 @@ export default createStore({
   actions: {
   },
   modules: {
+    request
   }
 })
